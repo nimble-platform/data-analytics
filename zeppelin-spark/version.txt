@@ -1,0 +1,43 @@
+# This file tracks the version of the Docker Image
+
+01 (Working): 	install Anaconda 3 with all dependencies
+02 (Working): 	install Anaconda 3, external Pythonlib, and Zeppelin
+03 (Working): 	install Anaconda 3, Zeppelin
+04 (Working): 	install Anaconda 3, Zeppelin with 512m PermSize (Java 8 fix), Copy notebooks (pathchange)
+		changing MAVEN_OPTS to "Xmx512m" showed no effects in message
+05 (Working): 	install Anaconda 3, Zeppelin, matplotlib and remove redundant CMD
+
+
+TODO: 
+
+
+
+# usage
+
+sudo docker build --rm -t docker_nimble .
+
+sudo docker run --name docker_nimble -p 8080:8080 -v /home/docker/docker_nimble/workspace:/usr/zeppelin/workspace -v /home/docker/docker_nimble/notebook:/usr/zeppelin/notebook docker_nimble
+
+sudo docker rm -f docker_nimble
+
+sudo docker exec -it docker_nimble /bin/bash
+
+
+
+
+Error handling:
+
+error: "error checking context: 'can't stat '/home/docker/docker_nimble''."
+-> change owner to root 
+sudo chown -R root:root /home/docker/docker_nimble
+
+dns error, can't apt update in docker because docker can't connect to dns server in srfg or campus net:
+Append in file
+sudo nano /etc/default/docker
+DOCKER_OPTS="--dns 8.8.8.8 --dns 8.8.4.4 --dns 172.16.0.2 --dns 172.16.04"
+docker-compose has to be installed get dns address with
+nmcli dev | grep IP4
+
+
+python3 -m pip install --upgrade pip 
+apt-get upgrade
