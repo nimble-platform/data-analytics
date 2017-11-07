@@ -2,7 +2,7 @@
 
 A `debian:jessie` based Spark and [Zeppelin](http://zeppelin.apache.org) Docker container.
 
-This image is large and opinionated. It contains:
+This image is large with about 5 GB. It contains:
 
 - [Spark 2.1.1](http://spark.apache.org/docs/2.1.1) and [Hadoop 2.7.3](http://hadoop.apache.org/docs/r2.7.3)
 - [PySpark](http://spark.apache.org/docs/2.1.1/api/python) support with [Anaconda3-5](https://www.anaconda.com/distribution/)
@@ -10,14 +10,12 @@ This image is large and opinionated. It contains:
 
 ## complex usage
 
-You can use [docker-compose](http://docs.docker.com/compose) to easily run Zeppelin in more complex configurations. See this project's `./examples` directory for examples of using Zeppelin with `docker-compose` to :
+You can use [docker-compose](http://docs.docker.com/compose) to run Zeppelin in more complex configurations. See the project's `./notebook/examples` directory for examples of using Zeppelin with `docker-compose` to :
 
 - read and write from local data files
 - read and write documents in ElasticSearch
 
 ## onbuild
-
-The Docker `onbuild` container is still a part of this project, but **I have no plans to keep it updated**. See the `onbuild` directory to view its `Dockerfile`.
 
 To use it, create a new `Dockerfile` based on `dylanmei/zeppelin:onbuild` and supply a new, executable `install.sh` file in the same directory. It will override the base one via Docker's [ONBUILD](https://docs.docker.com/reference/builder/#onbuild) instruction.
 
@@ -45,7 +43,7 @@ INSTALL
 
 ## license
 
-MIT
+Apache 2.0
 
 
 ## usage
