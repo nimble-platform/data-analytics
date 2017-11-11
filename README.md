@@ -214,7 +214,7 @@ Alternatively, setting the permissions of the directory `/path/to/storage` to th
 [macmounts]: https://docs.docker.com/docker-for-mac/osxfs/
 
 
-For demonstration purposes, example data is shared in the default`elasticsearch/data`.
+For demonstration purposes, example data is shared in the default volume `elasticsearch/data`.
 
 
 ## Extensibility
