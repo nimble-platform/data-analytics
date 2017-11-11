@@ -5,15 +5,20 @@ FROM python:3.5
 RUN apt-get update 
 
 # install librdkafka client
-ENV LIBRDKAFKA_VERSION 0.11.1
-# ENV LIBRDKAFKA_VERSION 0.9.2-RC1
-# ENV LIBRDKAFKA_VERSION 0.9.2
+#ENV LIBRDKAFKA_VERSION 0.11.1
+ENV LIBRDKAFKA_VERSION 0.9.5
+RUN wget --quiet https://github.com/edenhill/librdkafka/archive/v${LIBRDKAFKA_VERSION}.tar.gz -O /root/librdkafka-v${LIBRDKAFKA_VERSION}.tar.gz
 
-RUN git clone https://github.com/edenhill/librdkafka && cd librdkafka && \
-    git checkout v${LIBRDKAFKA_VERSION} && \
-    ./configure && make && make install && ldconfig
+RUN tar -xzf /root/librdkafka-v${LIBRDKAFKA_VERSION}.tar.gz -C /root
+RUN cd /root/librdkafka-${LIBRDKAFKA_VERSION} && \
+    ./configure && make && make install && make clean && ./configure --clean
+
+ENV CPLUS_INCLUDE_PATH /usr/local/include
+ENV LIBRARY_PATH /usr/local/lib
+ENV LD_LIBRARY_PATH /usr/local/lib
 
 
+# install pip packages
 RUN pip install confluent-kafka==0.9.1.2
 
 RUN mkdir /home/code
