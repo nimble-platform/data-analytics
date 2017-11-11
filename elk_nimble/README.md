@@ -311,12 +311,17 @@ eg.
      - "3001:3000"
 ```
 
-
-
 * errors while removing docker containers:
 
 remove redundant docker installations
 
+* Warning in log: `max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]`:
+
+Increase the map count on the host machine with:
+
+```bash
+sudo sysctl -w vm.max_map_count=262144
+```
 
 
 
