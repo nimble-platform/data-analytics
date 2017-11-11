@@ -214,6 +214,10 @@ Alternatively, setting the permissions of the directory `/path/to/storage` to th
 [esuser]: https://github.com/elastic/elasticsearch-docker/blob/016bcc9db1dd97ecd0ff60c1290e7fa9142f8ddd/templates/Dockerfile.j2#L22
 [macmounts]: https://docs.docker.com/docker-for-mac/osxfs/
 
+
+For demonstration purposes, example data is shared in the default`elasticsearch/data`.
+
+
 ## Extensibility
 
 ### How can I add plugins?
@@ -290,6 +294,32 @@ Check dns settings in /etc/default/docker
 ```sudo service docker restart```
 
 Check dns settings in /etc/default/docker
+
+* elasticsearch crashes instantly:
+
+check permission of `elasticsearch/data`.
+
+```bash
+sudo chown -r USER:USER elasticsearch/data
+```
+
+remove redundant docker installations
+
+* Error starting userland proxy: listen tcp 0.0.0.0:3000: bind: address already in use
+Change the hosts port number in docker-compose.yml. 
+eg.
+```kafka:
+    ports:
+     - "3001:3000"```
+
+
+
+* errors while removing docker containers:
+
+remove redundant docker installations
+
+
+
 
 
 
