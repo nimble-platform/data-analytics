@@ -121,7 +121,6 @@ def stream_kafka():
             if not msg.error():
                 data = json.loads(msg.value().decode('utf-8'))
                 logger.info('', extra=data)
-                print(data)
             elif msg.error().code() != KafkaError._PARTITION_EOF:
                 print(msg.error())
                 logger.warning('Exception in Kafka-Logstash Streaming', extra=str(msg))

@@ -2,7 +2,9 @@
 
 
 The ELK stask was adapted from [deviantony](https://github.com/deviantony/docker-elk) and tagged to the following version:
+[![Join the chat at https://gitter.im/deviantony/docker-elk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deviantony/docker-elk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![Elastic Stack version](https://img.shields.io/badge/ELK-5.6.3-blue.svg?style=flat)](https://github.com/deviantony/docker-elk/issues/182)
+[![Build Status](https://api.travis-ci.org/deviantony/docker-elk.svg?branch=master)](https://travis-ci.org/deviantony/docker-elk)
 
 Run the latest version of the ELK (Elasticsearch, Logstash, Kibana) stack with Docker and Docker Compose.
 
@@ -285,13 +287,23 @@ logstash:
 
 ```sudo service docker restart```
 
-Check dns settings in /etc/default/docker
+Add the file `/etc/docker/daemon.json` with the content:
+```
+{
+    "dns": [your_dns, "8.8.8.8"]
+}
+```
+where `your_dns``can be found with the command:
 
-* build end with non zero code 4:
+```bash
+nmcli device show <interfacename> | grep IP4.DNS
+```
+
+* build end with non zero code 4 or 128:
 
 ```sudo service docker restart```
 
-Check dns settings in /etc/default/docker
+See the point above
 
 * elasticsearch crashes instantly:
 
@@ -308,20 +320,14 @@ Change the hosts port number in docker-compose.yml.
 eg.
 ```kafka:
     ports:
-     - "3001:3000"
-```
+     - "3001:3000"```
+
+
 
 * errors while removing docker containers:
 
 remove redundant docker installations
 
-* Warning in log: `max virtual memory areas vm.max_map_count [65530] is too low, increase to at least [262144]`:
-
-Increase the map count on the host machine with:
-
-```bash
-sudo sysctl -w vm.max_map_count=262144
-```
 
 
 

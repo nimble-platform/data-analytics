@@ -9,7 +9,8 @@ ENV LIBRDKAFKA_VERSION 0.11.1
 # ENV LIBRDKAFKA_VERSION 0.9.2-RC1
 # ENV LIBRDKAFKA_VERSION 0.9.2
 
-RUN git clone https://github.com/edenhill/librdkafka && cd librdkafka && \
+RUN apt-get update && \
+    git clone https://github.com/edenhill/librdkafka && cd librdkafka && \
     git checkout v${LIBRDKAFKA_VERSION} && \
     ./configure && make && make install && ldconfig
 
@@ -29,8 +30,8 @@ ENV LOGSTASH_HOST logstash
 ENV LOGSTASH_PORT 5000
 
 # seperate kafka entries with ","
-ENV KAFKA_TOPICS "SensorData"
-ENV BOOTSTRAP_SERVERS "il061,il062"
+#ENV KAFKA_TOPICS "SensorData"
+#ENV BOOTSTRAP_SERVERS "il061,il062"
 
 
 # run kafka-apdater

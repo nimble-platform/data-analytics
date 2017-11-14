@@ -12,6 +12,7 @@ services:
       - elasticsearch
       - logstash
       - kibana
+      - redis
 
   redis:
     image: "redis:alpine"
