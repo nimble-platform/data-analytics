@@ -1,14 +1,13 @@
-# Docker ELK stack with integrated Adapter for Kafka Messages
+# Docker ELK stack with integrated Kafka Adapter
 
 
-The ELK stask was adapted from [deviantony](https://github.com/deviantony/docker-elk) and tagged to the following version:
-[![Join the chat at https://gitter.im/deviantony/docker-elk](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/deviantony/docker-elk?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![Elastic Stack version](https://img.shields.io/badge/ELK-5.6.3-blue.svg?style=flat)](https://github.com/deviantony/docker-elk/issues/182)
-[![Build Status](https://api.travis-ci.org/deviantony/docker-elk.svg?branch=master)](https://travis-ci.org/deviantony/docker-elk)
+The ELK stack was adapted from [deviantony](https://github.com/deviantony/docker-elk) and tagged to version
+
+[![Elastic Stack version](https://img.shields.io/badge/ELK-5.6.3-blue.svg?style=flat)](https://github.com/deviantony/docker-elk/issues/182).
 
 Run the latest version of the ELK (Elasticsearch, Logstash, Kibana) stack with Docker and Docker Compose.
 
-It will give you the ability to analyze any data set by using the searching/aggregation capabilities of Elasticsearch
+It will give you the ability to analyse data on the kafka message bus by using the searching/aggregation capabilities of Elasticsearch
 and the visualization power of Kibana.
 
 Based on the official Docker images:
@@ -17,12 +16,14 @@ Based on the official Docker images:
 * [logstash](https://github.com/elastic/logstash-docker)
 * [kibana](https://github.com/elastic/kibana-docker)
 
-Plus the Kafka Adapter:
-* based on the Kafka Client [librdkafka](https://github.com/geeknam/docker-confluent-python) version **0.11.1**
+Plus the Kafka Adapter based on the components:
+
+* Kafka Client [librdkafka](https://github.com/geeknam/docker-confluent-python) version **0.11.1**
+
 * python kafka module [confluent-kafka-python](https://github.com/confluentinc/confluent-kafka-python) version **0.9.1.2**
 
 
-**Note**: Other branches in this project are available:
+**Note**: Other branches of the forged project are available:
 
 * ELK 5 with X-Pack support: https://github.com/deviantony/docker-elk/tree/x-pack
 * ELK 5 in Vagrant: https://github.com/deviantony/docker-elk/tree/vagrant
@@ -58,6 +59,8 @@ Plus the Kafka Adapter:
 1. Install [Docker](https://www.docker.com/community-edition#/download) version **1.10.0+**
 2. Install [Docker Compose](https://docs.docker.com/compose/install/) version **1.6.0+**
 3. Clone this repository
+4. Set permissions to make the content writable by the user
+
 
 ### SELinux
 
@@ -93,7 +96,7 @@ By default, the stack exposes the following ports:
 * 9200: Elasticsearch HTTP
 * 9300: Elasticsearch TCP transport
 * 5601: Kibana
-* 3000: Kafka-Adapter HTTP
+* 3030: Kafka-Adapter HTTP
 
 **WARNING**: If you're using `boot2docker`, you must access it via the `boot2docker` IP address instead of `localhost`.
 
@@ -103,7 +106,7 @@ By default, the stack exposes the following ports:
 The Kafka-Adapter should now automatically fetch data from the kafka message bus on topic **SensorData**. However, the selected topics can be specified in `kafka-adapter/Dockerfile` by setting the environment
 variables of logstash. KAFKA_TOPICS should be of the form "topic1,topic2,topic3,..."
 
-To test the ELK Stack itself, inject example log entries via TCP by:
+To test the ELK Stack itself (without the kafka adapter), inject example log entries via TCP by:
 
 ```bash
 $ nc localhost 5000 < /path/to/logfile.log
@@ -114,7 +117,7 @@ $ nc localhost 5000 < /path/to/logfile.log
 
 ### Default Kibana index pattern creation
 
-When Kibana launches for the first time, it is not configured with any index pattern.
+When Kibana launches for the first time, it is not configured with any index pattern. If you are using the Kafka Adapter and consume data, just follow the instructions in `Via the Kibana web UI` and your configuration will be saved in the mounted directory `elasticsearch/data/`.
 
 #### Via the Kibana web UI
 
@@ -127,7 +130,7 @@ about the index pattern configuration.
 
 #### On the command line
 
-Run this command to create a Logstash index pattern:
+Run this command to create a customized Logstash index pattern:
 
 ```bash
 $ curl -XPUT -D- 'http://localhost:9200/.kibana/index-pattern/logstash-*' \
@@ -186,7 +189,7 @@ Elasticsearch](https://github.com/deviantony/docker-elk/wiki/Elasticsearch-clust
 
 ### How can I persist Elasticsearch data?
 
-The data stored in Elasticsearch will be persisted after container reboot but not after container removal.
+The data stored in Elasticsearch will be persisted due to the following volume mountage:
 
 In order to persist Elasticsearch data even after removing the Elasticsearch container, you'll have to mount a volume on
 your Docker host. Update the `elasticsearch` service declaration to:
@@ -293,7 +296,7 @@ Add the file `/etc/docker/daemon.json` with the content:
     "dns": [your_dns, "8.8.8.8"]
 }
 ```
-where `your_dns``can be found with the command:
+where `your_dns` can be found with the command:
 
 ```bash
 nmcli device show <interfacename> | grep IP4.DNS
@@ -311,16 +314,17 @@ check permission of `elasticsearch/data`.
 
 ```bash
 sudo chown -r USER:USER elasticsearch/data
+sudo chmod -R 777 .
 ```
 
 remove redundant docker installations
 
-* Error starting userland proxy: listen tcp 0.0.0.0:3000: bind: address already in use
+* Error starting userland proxy: listen tcp 0.0.0.0:3030: bind: address already in use
 Change the hosts port number in docker-compose.yml. 
 eg.
 ```kafka:
     ports:
-     - "3001:3000"```
+     - "3031:3000"```
 
 
 

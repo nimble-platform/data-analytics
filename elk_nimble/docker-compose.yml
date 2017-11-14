@@ -5,7 +5,7 @@ services:
   kafka:
     build: kafka-adapter/
     ports:
-     - "3000:3000"
+     - "3030:3000"
     networks:
       - elk
     depends_on:
