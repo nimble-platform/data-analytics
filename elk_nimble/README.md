@@ -324,7 +324,8 @@ Change the hosts port number in docker-compose.yml.
 eg.
 ```kafka:
     ports:
-     - "3031:3000"```
+     - "3031:3000"
+```
 
 
 
