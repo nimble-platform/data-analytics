@@ -25,15 +25,6 @@ WORKDIR /home/code
 RUN pip install -r /home/code/requirements.txt
 
 
-# set environment variables for logstash communication
-ENV LOGSTASH_HOST logstash
-ENV LOGSTASH_PORT 5000
-
-# seperate kafka entries with ","
-#ENV KAFKA_TOPICS "SensorData"
-#ENV BOOTSTRAP_SERVERS "il061,il062"
-
-
 # run kafka-apdater
 ENTRYPOINT ["python"]
 CMD ["/home/code/kafka-adapter.py"]

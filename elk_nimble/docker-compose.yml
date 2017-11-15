@@ -1,28 +1,31 @@
-version: '2'
+version: '2.1'
 
 services:
-
+# Kafka
   kafka:
     build: kafka-adapter/
     ports:
-     - "3030:3000"
+      - "3030:3030"
+    environment:
+      # set environment variables for logstash communication
+      - LOGSTASH_HOST=logstash
+      - LOGSTASH_PORT=5000
+      # seperate kafka entries with ","
+      - KAFKA_TOPICS=SensorData,node-red-messages
+      - BOOTSTRAP_SERVERS=il061,il062
     networks:
       - elk
     depends_on:
-      - elasticsearch
-      - logstash
-      - kibana
       - redis
+      - logstash
 
+# Redis Webservice
   redis:
     image: "redis:alpine"
     networks:
       - elk
-    depends_on:
-      - elasticsearch
-      - logstash
-      - kibana
 
+# Elasticsearch
   elasticsearch:
     build: elasticsearch/
     volumes:
@@ -33,10 +36,13 @@ services:
       - "9300:9300"
     environment:
       ES_JAVA_OPTS: "-Xmx256m -Xms256m"
-    restart: always
+    healthcheck:
+      test: "exit 0"
     networks:
       - elk
+    restart: always
 
+# Logstash
   logstash:
     build: logstash/
     volumes:
@@ -52,16 +58,17 @@ services:
       - elasticsearch
     restart: always
 
+# Kibana
   kibana:
     build: kibana/
     volumes:
       - ./kibana/config/:/usr/share/kibana/config
     ports:
       - "5601:5601"
-    networks:
-      - elk
     depends_on:
       - elasticsearch
+    networks:
+      - elk
     restart: always
 
 

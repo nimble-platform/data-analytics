@@ -43,12 +43,13 @@ def print_adapter_status():
     This function is called by a sebserver request and prints the current meta information.
     :return:
     """
+    adapter_status = {"application": "db-adapter"}
     try:
         with open(STATUS_FILE) as f:
             adapter_status = json.loads(f.read())
     except FileNotFoundError:
         adapter_status = {"application": "db-adapter",
-                          "status": "initial"}
+                          "status": "initialisation"}
     return jsonify(adapter_status)
 
 
@@ -90,7 +91,7 @@ def stream_kafka():
     adapter_status = {
         "application": "db-adapter",
         "doc": __desc__,
-        "status": "loading",
+        "status": "waiting for dependencies",
         "kafka input": {
             "configuration": conf,
             "subscribed topics": kafka_topics_str
@@ -106,6 +107,9 @@ def stream_kafka():
     }
     with open(STATUS_FILE, "w") as f:
         f.write(json.dumps(adapter_status))
+
+    # time for logstash init
+    time.sleep(30)
 
     # ready to stream flag
     running = True
@@ -125,6 +129,7 @@ def stream_kafka():
                 print(msg.error())
                 logger.warning('Exception in Kafka-Logstash Streaming', extra=str(msg))
             time.sleep(0)
+
     except Exception as error:
         logger.error("Error in Kafka-Logstash Streaming: {}".format(error))
         adapter_status["status"] = "error"
@@ -140,4 +145,5 @@ if __name__ == '__main__':
     kafka_streaming = Process(target=stream_kafka, args=())
     kafka_streaming.start()
 
-    app.run(host="0.0.0.0", debug=True, port=3000)
+    app.run(host="0.0.0.0", debug=False, port=3030)
+
