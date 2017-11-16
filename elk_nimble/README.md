@@ -324,7 +324,7 @@ Change the hosts port number in docker-compose.yml.
 eg.
 ```kafka:
     ports:
-     - "3031:3000"
+     - "3031:3030"
 ```
 
 
@@ -332,6 +332,16 @@ eg.
 * errors while removing docker containers:
 
 remove redundant docker installations
+
+
+* entire heap max virtual memory areas vm.max_map_count [65530] likely too low, increase to at least [262144]
+    
+run on host machine:
+
+```bash
+sudo sysctl -w vm.max_map_count=262144
+```
+
 
 
 

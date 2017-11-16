@@ -22,6 +22,6 @@ ELK Stack with integrated Kafka messaging adapter, running
 
 ## 06 (Working):
 
-set dependencies of ELK+Kafka Stack and use environment variables in docker-compose.yaml
+set dependencies of ELK+Kafka Stack and use environment variables in docker-compose.yml
 
 	
