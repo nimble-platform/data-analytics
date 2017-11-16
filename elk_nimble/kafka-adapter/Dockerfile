@@ -26,5 +26,5 @@ RUN pip install -r /home/code/requirements.txt
 
 
 # run kafka-apdater
-ENTRYPOINT ["python"]
-CMD ["/home/code/kafka-adapter.py"]
+# ENTRYPOINT ["python"]
+# CMD ["/home/code/kafka-adapter.py"]
