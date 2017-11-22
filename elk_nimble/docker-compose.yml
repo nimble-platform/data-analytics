@@ -1,4 +1,4 @@
-version: '2.3'
+version: '3.3'
 
 
 services:
@@ -49,7 +49,6 @@ services:
       interval: 1m00s
       timeout: 10s
       retries: 3
-      start_period: 2m00s
     networks:
       - elk
     restart: always
@@ -67,8 +66,7 @@ services:
     networks:
       - elk
     depends_on:
-      elasticsearch:
-        condition: service_healthy
+      - elasticsearch
     restart: always
 
 # Kibana
