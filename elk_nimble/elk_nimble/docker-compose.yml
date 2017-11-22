@@ -1,0 +1,94 @@
+version: '2.3'
+
+
+services:
+# Kafka
+  kafka:
+    build: kafka-adapter/
+    ports:
+      - "3030:3030"
+    environment:
+      # set environment variables for logstash communication
+      - LOGSTASH_HOST=logstash
+      - LOGSTASH_PORT=5000
+      # seperate kafka entries with ","
+      - KAFKA_TOPICS=SensorData,node-red-messages
+      - BOOTSTRAP_SERVERS=il061,il062
+    networks:
+      - elk
+    depends_on:
+      - redis
+    entrypoint:
+      - python
+      - /home/code/kafka-adapter.py
+    restart: always
+
+
+# Redis Webservice
+  redis:
+    image: "redis:alpine"
+    sysctls:
+      - net.core.somaxconn=65535
+    networks:
+      - elk
+    restart: always
+
+
+# Elasticsearch
+  elasticsearch:
+    build: elasticsearch/
+    volumes:
+      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+      - ./data:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+    healthcheck:
+      test: "exit 0"
+      interval: 1m00s
+      timeout: 10s
+      retries: 3
+      start_period: 2m00s
+    networks:
+      - elk
+    restart: always
+
+# Logstash
+  logstash:
+    build: logstash/
+    volumes:
+      - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml
+      - ./logstash/pipeline:/usr/share/logstash/pipeline
+    ports:
+      - "5000:5000"
+    environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+    networks:
+      - elk
+    depends_on:
+      elasticsearch:
+        condition: service_healthy
+    restart: always
+
+# Kibana
+  kibana:
+    build: kibana/
+    volumes:
+      - ./kibana/config/:/usr/share/kibana/config
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch
+    networks:
+      - elk
+    restart: always
+
+
+networks:
+  elk:
+    driver: bridge
+
+
+
