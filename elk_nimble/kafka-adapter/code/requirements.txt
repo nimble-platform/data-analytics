@@ -1,4 +1,0 @@
-python-logstash
-confluent-kafka
-flask
-redis

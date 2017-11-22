@@ -342,7 +342,26 @@ run on host machine:
 sudo sysctl -w vm.max_map_count=262144
 ```
 
+* Overcommit Warning of Redis webserver.
+    
+Use sysctls option or add this line to `/etc/rc.local`
+```
+echo never > /sys/kernel/mm/transparent_hugepage/enabled
+echo never > /sys/kernel/mm/transparent_hugepage/defrag
+```
 
+
+* Redis: WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+
+Add this line to `/etc/rc.local`
+
+```
+sysctl -w net.core.somaxconn=65535
+```
+
+* Redis warning: "WARNING you have Transparent Huge Pages (THP) support enabled in your kernel."
+
+Just ignore this
 
 
 

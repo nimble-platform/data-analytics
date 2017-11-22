@@ -1,39 +1,44 @@
 version: '2.3'
 
+
 services:
 # Kafka
   kafka:
-    build: kafka-adapter/
+    build: kafka-logstash-adapter/
     ports:
       - "3030:3030"
     environment:
-      # set environment variables for logstash communication
-      - LOGSTASH_HOST=logstash
-      - LOGSTASH_PORT=5000
       # seperate kafka entries with ","
-      - KAFKA_TOPICS=SensorData,node-red-messages
+      - KAFKA_TOPICS=SensorData
       - BOOTSTRAP_SERVERS=il061,il062
+      - KAFKA_GROUP_ID=db-adapter
+      - enable_kafka_adapter=true
     networks:
       - elk
     depends_on:
       - redis
-      - logstash
     entrypoint:
       - python
       - /home/code/kafka-adapter.py
+    restart: always
+
 
 # Redis Webservice
   redis:
-    image: "redis:alpine"
+    build: redis/
+    sysctls:
+      - net.core.somaxconn=65535
     networks:
       - elk
+    restart: always
+
 
 # Elasticsearch
   elasticsearch:
     build: elasticsearch/
     volumes:
-      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
-      - ./elasticsearch/data:/usr/share/elasticsearch/data
+      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+      - ./data:/usr/share/elasticsearch/data
     ports:
       - "9200:9200"
       - "9300:9300"
@@ -53,7 +58,7 @@ services:
   logstash:
     build: logstash/
     volumes:
-      - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml
+      - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
       - ./logstash/pipeline:/usr/share/logstash/pipeline
     ports:
       - "5000:5000"
@@ -62,14 +67,15 @@ services:
     networks:
       - elk
     depends_on:
-      - elasticsearch
+      elasticsearch:
+        condition: service_healthy
     restart: always
 
 # Kibana
   kibana:
     build: kibana/
     volumes:
-      - ./kibana/config/:/usr/share/kibana/config
+      - ./kibana/config/:/usr/share/kibana/config:ro
     ports:
       - "5601:5601"
     depends_on:
@@ -82,5 +88,6 @@ services:
 networks:
   elk:
     driver: bridge
+
 
 
