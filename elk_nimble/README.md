@@ -1,8 +1,7 @@
 # Docker ELK stack with integrated Kafka Adapter
 
 
-The ELK stack was adapted from [deviantony](https://github.com/deviantony/docker-elk) and tagged to version
-
+The ELK stack was adapted from [deviantony](https://github.com/deviantony/docker-elk)'s ELK-Stack version: 
 [![Elastic Stack version](https://img.shields.io/badge/ELK-5.6.3-blue.svg?style=flat)](https://github.com/deviantony/docker-elk/issues/182).
 
 Run the latest version of the ELK (Elasticsearch, Logstash, Kibana) stack with Docker and Docker Compose.
@@ -11,20 +10,16 @@ It will give you the ability to analyse data on the kafka message bus by using t
 and the visualization power of Kibana.
 
 Based on the official Docker images:
-
 * [elasticsearch](https://github.com/elastic/elasticsearch-docker)
 * [logstash](https://github.com/elastic/logstash-docker)
 * [kibana](https://github.com/elastic/kibana-docker)
 
 Plus the Kafka Adapter based on the components:
-
 * Kafka Client [librdkafka](https://github.com/geeknam/docker-confluent-python) version **0.11.1**
-
 * python kafka module [confluent-kafka-python](https://github.com/confluentinc/confluent-kafka-python) version **0.9.1.2**
 
 
 **Note**: Other branches of the forged project are available:
-
 * ELK 5 with X-Pack support: https://github.com/deviantony/docker-elk/tree/x-pack
 * ELK 5 in Vagrant: https://github.com/deviantony/docker-elk/tree/vagrant
 * ELK 5 with Search Guard: https://github.com/deviantony/docker-elk/tree/searchguard
@@ -50,7 +45,7 @@ Plus the Kafka Adapter based on the components:
 6. [JVM tuning](#jvm-tuning)
    * [How can I specify the amount of memory used by a service?](#how-can-i-specify-the-amount-of-memory-used-by-a-service)
    * [How can I enable a remote JMX connection to a service?](#how-can-i-enable-a-remote-jmx-connection-to-a-service)
-7. [Trouble-Shooting](#trouble-shooting)
+7. [Trouble-Shooting](#Trouble-shooting)
 
 ## Requirements
 
@@ -96,7 +91,7 @@ By default, the stack exposes the following ports:
 * 9200: Elasticsearch HTTP
 * 9300: Elasticsearch TCP transport
 * 5601: Kibana
-* 3030: Kafka-Adapter HTTP
+* 3030: Kafka-ELK HTTP
 
 **WARNING**: If you're using `boot2docker`, you must access it via the `boot2docker` IP address instead of `localhost`.
 
@@ -208,7 +203,7 @@ This will store Elasticsearch data inside `/path/to/storage`.
 
 Alternatively, setting the permissions of the directory `/path/to/storage` to the user is an easy workaround.
 
-```sudo chown USER:USER /path/to/storage```
+```sudo chown -R USER:USER /path/to/storage```
 
 
 * **macOS:** the default Docker for Mac configuration allows mounting files from `/Users/`, `/Volumes/`, `/private/`,
@@ -218,7 +213,7 @@ Alternatively, setting the permissions of the directory `/path/to/storage` to th
 [macmounts]: https://docs.docker.com/docker-for-mac/osxfs/
 
 
-For demonstration purposes, example data is shared in the default`elasticsearch/data`.
+For demonstration purposes, example data is shared in the default`data`.
 
 
 ## Extensibility
@@ -286,11 +281,12 @@ logstash:
 
 ## trouble-shooting
 
-* can't apt-get update in Dockerfile:
+### Can't apt-get update in Dockerfile:
+Restart the service
 
 ```sudo service docker restart```
 
-Add the file `/etc/docker/daemon.json` with the content:
+or add the file `/etc/docker/daemon.json` with the content:
 ```
 {
     "dns": [your_dns, "8.8.8.8"]
@@ -302,25 +298,31 @@ where `your_dns` can be found with the command:
 nmcli device show <interfacename> | grep IP4.DNS
 ```
 
-* build end with non zero code 4 or 128:
+### Traceback of non zero code 4 or 128:
 
+Restart service with
 ```sudo service docker restart```
 
-See the point above
+or add your dns address as described above
 
-* elasticsearch crashes instantly:
 
-check permission of `elasticsearch/data`.
+### Elasticsearch crashes instantly:
+
+Check permission of `elasticsearch/data`.
 
 ```bash
-sudo chown -r USER:USER elasticsearch/data
+sudo chown -r USER:USER .
 sudo chmod -R 777 .
 ```
 
-remove redundant docker installations
+or remove redundant docker installations or reinstall it
 
-* Error starting userland proxy: listen tcp 0.0.0.0:3030: bind: address already in use
-Change the hosts port number in docker-compose.yml. 
+
+### Error starting userland proxy: listen tcp 0.0.0.0:3030: bind: address already in use
+
+Bring down other services,
+
+or change the hosts port number in docker-compose.yml. 
 eg.
 ```kafka:
     ports:
@@ -329,37 +331,27 @@ eg.
 
 
 
-* errors while removing docker containers:
+### errors while removing docker containers:
 
-remove redundant docker installations
+Remove redundant docker installations
 
 
-* entire heap max virtual memory areas vm.max_map_count [65530] likely too low, increase to at least [262144]
+### "entire heap max virtual memory areas vm.max_map_count [...] likely too low, increase to at least [262144]"
     
-run on host machine:
+Run on host machine:
 
 ```bash
 sudo sysctl -w vm.max_map_count=262144
 ```
 
-* Overcommit Warning of Redis webserver.
-    
-Use sysctls option or add this line to `/etc/rc.local`
+### Redis warning: vm.overcommit_memory
+Run on host:
 ```
-echo never > /sys/kernel/mm/transparent_hugepage/enabled
-echo never > /sys/kernel/mm/transparent_hugepage/defrag
-```
-
-
-* Redis: WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
-
-Add this line to `/etc/rc.local`
+sysctl vm.overcommit_memory=1
 
 ```
-sysctl -w net.core.somaxconn=65535
-```
 
-* Redis warning: "WARNING you have Transparent Huge Pages (THP) support enabled in your kernel."
+### Redis warning: "WARNING you have Transparent Huge Pages (THP) support enabled in your kernel."
 
 Just ignore this
 
