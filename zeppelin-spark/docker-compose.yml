@@ -1,0 +1,23 @@
+version: '3.3'
+
+
+services:
+# Zeppelin
+  zeppelin:
+    build: Zeppelin-Spark
+    volumes:
+      - ./Zeppelin-Spark/workspace:/usr/zeppelin/workspace
+      - ./Zeppelin-Spark/notebook:/usr/zeppelin/notebook
+    ports:
+      - "8080:8080"
+    networks:
+      - elk_datastore
+    restart: always
+
+
+networks:
+  elk_datastore:
+    external: true
+
+
+

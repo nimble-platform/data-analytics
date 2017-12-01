@@ -1,4 +1,4 @@
-# Docker Data Analytic Stack with ELK stack, Spark, Zeppelin and Kafka Adapter
+# Docker ELK stack with integrated Kafka Adapter
 
 
 The ELK stack was adapted from [deviantony](https://github.com/deviantony/docker-elk)'s ELK-Stack version: 
@@ -9,22 +9,20 @@ Run the latest version of the ELK (Elasticsearch, Logstash, Kibana) stack with D
 It will give you the ability to analyse data on the kafka message bus by using the searching/aggregation capabilities of Elasticsearch
 and the visualization power of Kibana.
 
-ELK Stack based on the official Docker images:
-* [elasticsearch 6.0](https://github.com/elastic/elasticsearch-docker)
-* [logstash 6.0](https://github.com/elastic/logstash-docker)
-* [kibana 6.0](https://github.com/elastic/kibana-docker)
+Based on the official Docker images:
+* [elasticsearch](https://github.com/elastic/elasticsearch-docker)
+* [logstash](https://github.com/elastic/logstash-docker)
+* [kibana](https://github.com/elastic/kibana-docker)
 
-Zeppelin-Spark based on:
-* [Hadoop 2.7.3](http://hadoop.apache.org/docs/r2.7.3)
-* [Spark 2.1.1](http://spark.apache.org/docs/2.1.1) 
-* [PySpark](http://spark.apache.org/docs/2.1.1/api/python) 
-* [Anaconda3-5](https://www.anaconda.com/distribution/)
-* [Zeppelin](http://zeppelin.apache.org)
-
-Kafka to Logstash Adapter based on the components:
+Plus the Kafka Adapter based on the components:
 * Kafka Client [librdkafka](https://github.com/geeknam/docker-confluent-python) version **0.11.1**
 * python kafka module [confluent-kafka-python](https://github.com/confluentinc/confluent-kafka-python) version **0.9.1.2**
 
+
+**Note**: Other branches of the forged project are available:
+* ELK 5 with X-Pack support: https://github.com/deviantony/docker-elk/tree/x-pack
+* ELK 5 in Vagrant: https://github.com/deviantony/docker-elk/tree/vagrant
+* ELK 5 with Search Guard: https://github.com/deviantony/docker-elk/tree/searchguard
 
 ## Contents
 
@@ -76,14 +74,19 @@ $ chcon -R system_u:object_r:admin_home_t:s0 docker-elk/
 Start the ELK stack using `docker-compose`:
 
 ```bash
-docker-compose up --build
+cd elk
+docker-compose up --build -d
+
+cd ../adapter
+docker-compose up --build -d
+
+cd ../zeppelin
+docker-compose up --build -d
+
 ```
 
-You can also choose to run it in background (detached mode):
+The flag `-d` stands for running it in background (detached mode):
 
-```bash
-docker-compose up -d
-```
 
 Give Kibana about 2 minutes to initialize, then access the Kibana web UI by hitting
 [http://localhost:5601](http://localhost:5601) with a web browser.
@@ -94,6 +97,7 @@ By default, the stack exposes the following ports:
 * 9300: Elasticsearch TCP transport
 * 5601: Kibana
 * 3030: Kafka-ELK HTTP
+* 8080: Zeppelin GUI
 
 **WARNING**: If you're using `boot2docker`, you must access it via the `boot2docker` IP address instead of `localhost`.
 
