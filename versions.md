@@ -2,22 +2,19 @@
 
 ## 01 (Working): 	
 
-ELK Stack with Zeppelin Spark and Kafka Logstash Adapter. .env File
+Integrated Zeppelin
 
+## 02 (Not Working):	
 
-
+changed kafka-adapter to map optionally the sensorthings IDs
+ELK open source version 6.0
+elastic interpreter in zeppelin finds elasticsearch:9200
+			
 
 
 
 ## TODOs:
 
-* Map iot.ids with GOST server
-
-* Test Spark-Elasticsearch
-
-* Evaluate ES-Hadoop plugin
-
-
-* scale on cluster, elasticsearch-config and deviantony for details
+* scale on cluster with swarm, elasticsearch-config and deviantony for details
 
 * mount cluster storage for elasticsearch data
