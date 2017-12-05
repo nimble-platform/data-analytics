@@ -8,7 +8,7 @@ services:
     build: elasticsearch/
     volumes:
       - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
-      - ../sink:/usr/share/elasticsearch/data
+      - ../datasink:/usr/share/elasticsearch/data
     ports:
       - "9200:9200"
       - "9300:9300"
