@@ -1,4 +1,4 @@
-# Docker ELK stack with integrated Kafka Adapter
+# Docker ELK stack inside the Data Analytic Stack
 
 
 The ELK stack was adapted from [deviantony](https://github.com/deviantony/docker-elk) and tagged to version
@@ -16,11 +16,6 @@ Based on the official Docker images:
 * [logstash](https://github.com/elastic/logstash-docker)
 * [kibana](https://github.com/elastic/kibana-docker)
 
-Plus the Kafka Adapter based on the components:
-
-* Kafka Client [librdkafka](https://github.com/geeknam/docker-confluent-python) version **0.11.1**
-
-* python kafka module [confluent-kafka-python](https://github.com/confluentinc/confluent-kafka-python) version **0.9.1.2**
 
 
 **Note**: Other branches of the forged project are available:
@@ -50,7 +45,7 @@ Plus the Kafka Adapter based on the components:
 6. [JVM tuning](#jvm-tuning)
    * [How can I specify the amount of memory used by a service?](#how-can-i-specify-the-amount-of-memory-used-by-a-service)
    * [How can I enable a remote JMX connection to a service?](#how-can-i-enable-a-remote-jmx-connection-to-a-service)
-7. [Trouble-Shooting](#trouble-shooting)
+
 
 ## Requirements
 
@@ -59,7 +54,7 @@ Plus the Kafka Adapter based on the components:
 1. Install [Docker](https://www.docker.com/community-edition#/download) version **1.10.0+**
 2. Install [Docker Compose](https://docs.docker.com/compose/install/) version **1.6.0+**
 3. Clone this repository
-4. Set permissions to make the content writable by the user
+4. Set permissions and owner to write data into the datasink
 
 
 ### SELinux
@@ -78,46 +73,50 @@ $ chcon -R system_u:object_r:admin_home_t:s0 docker-elk/
 
 Start the ELK stack using `docker-compose`:
 
-```bash
-docker-compose up --build
+```console
+$ docker-compose up
 ```
 
 You can also choose to run it in background (detached mode):
 
-```bash
-docker-compose up -d
+```console
+$ docker-compose up -d
 ```
 
+Search Guard must be initialized after Elasticsearch is started:
+
+```bash
+$ docker-compose exec -T elasticsearch bin/init_sg.sh
+```
+
+_This executes sgadmin and loads the configuration from `elasticsearch/config/sg*.yml`_
+
 Give Kibana about 2 minutes to initialize, then access the Kibana web UI by hitting
-[http://localhost:5601](http://localhost:5601) with a web browser.
+[http://localhost:5601](http://localhost:5601) with a web browser and use the aforementioned credentials to login.
 
 By default, the stack exposes the following ports:
 * 5000: Logstash TCP input.
 * 9200: Elasticsearch HTTP
 * 9300: Elasticsearch TCP transport
 * 5601: Kibana
-* 3030: Kafka-Adapter HTTP
 
 **WARNING**: If you're using `boot2docker`, you must access it via the `boot2docker` IP address instead of `localhost`.
 
 **WARNING**: If you're using *Docker Toolbox*, you must access it via the `docker-machine` IP address instead of
 `localhost`.
 
-The Kafka-Adapter should now automatically fetch data from the kafka message bus on topic **SensorData**. However, the selected topics can be specified in `kafka-adapter/Dockerfile` by setting the environment
-variables of logstash. KAFKA_TOPICS should be of the form "topic1,topic2,topic3,..."
+Now that the stack is running, you will want to inject some log entries. The shipped Logstash configuration allows you
+to send content via TCP:
 
-To test the ELK Stack itself (without the kafka adapter), inject example log entries via TCP by:
-
-```bash
+```console
 $ nc localhost 5000 < /path/to/logfile.log
 ```
-
 
 ## Initial setup
 
 ### Default Kibana index pattern creation
 
-When Kibana launches for the first time, it is not configured with any index pattern. If you are using the Kafka Adapter and consume data, just follow the instructions in `Via the Kibana web UI` and your configuration will be saved in the mounted directory `elasticsearch/data/`.
+When Kibana launches for the first time, it is not configured with any index pattern.
 
 #### Via the Kibana web UI
 
@@ -130,19 +129,21 @@ about the index pattern configuration.
 
 #### On the command line
 
-Run this command to create a customized Logstash index pattern:
+Run this command to create a Logstash index pattern:
 
-```bash
+```console
 $ curl -XPUT -D- 'http://localhost:9200/.kibana/index-pattern/logstash-*' \
     -H 'Content-Type: application/json' \
+    -u kibanaserver:kibanaserver \
     -d '{"title" : "logstash-*", "timeFieldName": "@timestamp", "notExpandable": true}'
 ```
 
 This command will mark the Logstash index pattern as the default index pattern:
 
-```bash
-$ curl -XPUT -D- 'http://localhost:9200/.kibana/config/5.6.2' \
+```console
+$ curl -XPUT -D- 'http://localhost:9200/.kibana/config/5.6.3' \
     -H 'Content-Type: application/json' \
+    -u kibanaserver:kibanaserver \
     -d '{"defaultIndex": "logstash-*"}'
 ```
 
@@ -189,7 +190,7 @@ Elasticsearch](https://github.com/deviantony/docker-elk/wiki/Elasticsearch-clust
 
 ### How can I persist Elasticsearch data?
 
-The data stored in Elasticsearch will be persisted due to the following volume mountage:
+The data stored in Elasticsearch will be persisted after container reboot but not after container removal.
 
 In order to persist Elasticsearch data even after removing the Elasticsearch container, you'll have to mount a volume on
 your Docker host. Update the `elasticsearch` service declaration to:
@@ -204,22 +205,13 @@ elasticsearch:
 This will store Elasticsearch data inside `/path/to/storage`.
 
 **NOTE:** beware of these OS-specific considerations:
-* **Linux:** the [unprivileged `elasticsearch` user][esuser] is used within the Elasticsearch image, therefore the mounted data directory must be owned by the uid `1000`.
-
-Alternatively, setting the permissions of the directory `/path/to/storage` to the user is an easy workaround.
-
-```sudo chown USER:USER /path/to/storage```
-
-
+* **Linux:** the [unprivileged `elasticsearch` user][esuser] is used within the Elasticsearch image, therefore the
+  mounted data directory must be owned by the uid `1000`.
 * **macOS:** the default Docker for Mac configuration allows mounting files from `/Users/`, `/Volumes/`, `/private/`,
   and `/tmp` exclusively. Follow the instructions from the [documentation][macmounts] to add more locations.
 
 [esuser]: https://github.com/elastic/elasticsearch-docker/blob/016bcc9db1dd97ecd0ff60c1290e7fa9142f8ddd/templates/Dockerfile.j2#L22
 [macmounts]: https://docs.docker.com/docker-for-mac/osxfs/
-
-
-For demonstration purposes, example data is shared in the default`elasticsearch/data`.
-
 
 ## Extensibility
 
@@ -284,63 +276,21 @@ logstash:
     LS_JAVA_OPTS: "-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=18080 -Dcom.sun.management.jmxremote.rmi.port=18080 -Djava.rmi.server.hostname=DOCKER_HOST_IP -Dcom.sun.management.jmxremote.local.only=false"
 ```
 
-## trouble-shooting
+## Updates
 
-* can't apt-get update in Dockerfile:
+### Using a newer stack version
 
-```sudo service docker restart```
+To use a different Elastic Stack version than the one currently available in the repository, simply change the version
+number inside the `.env` file, and rebuild the stack with:
 
-Add the file `/etc/docker/daemon.json` with the content:
-```
-{
-    "dns": [your_dns, "8.8.8.8"]
-}
-```
-where `your_dns` can be found with the command:
-
-```bash
-nmcli device show <interfacename> | grep IP4.DNS
+```console
+$ docker-compose build
+$ docker-compose up
 ```
 
-* build end with non zero code 4 or 128:
+**NOTE**: Always pay attention to the [upgrade instructions](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html)
+for each individual component before performing a stack upgrade.
 
-```sudo service docker restart```
-
-See the point above
-
-* elasticsearch crashes instantly:
-
-check permission of `elasticsearch/data`.
-
-```bash
-sudo chown -r USER:USER elasticsearch/data
-sudo chmod -R 777 .
-```
-
-remove redundant docker installations
-
-* Error starting userland proxy: listen tcp 0.0.0.0:3030: bind: address already in use
-Change the hosts port number in docker-compose.yml. 
-eg.
-```kafka:
-    ports:
-     - "3031:3030"
-```
-
-
-
-* errors while removing docker containers:
-
-remove redundant docker installations
-
-
-* entire heap max virtual memory areas vm.max_map_count [65530] likely too low, increase to at least [262144]
-    
-run on host machine:
-
-```bash
-sudo sysctl -w vm.max_map_count=262144
-```
 
 
 

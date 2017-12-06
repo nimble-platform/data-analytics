@@ -4,16 +4,15 @@ version: '3.3'
 services:
 # Kafka
   kafka:
-    build: kafka-logstash-adapter/
+    build: 
+      context: kafka-adapter/
+      args:
+        - LIBRDKAFKA_VERSION=$LIBRDKAFKA_VERSION
+        - CONFLUENT_KAFKA_VERSION=$CONFLUENT_KAFKA_VERSION
     ports:
       - "3030:3030"
-    environment:
-      # seperate kafka entries with ","
-      - KAFKA_TOPICS=SensorData
-      - BOOTSTRAP_SERVERS=il061,il062
-      - KAFKA_GROUP_ID=db-adapter
-      - enable_kafka_adapter=false
-      - enable_sensorthings=false
+    env_file: 
+      - .env
     networks:
       - elk_datastore
     external_links:
@@ -24,7 +23,6 @@ services:
       - python
       - /home/code/kafka-adapter.py
     restart: always
-
 
 # Redis Webservice
   redis:
