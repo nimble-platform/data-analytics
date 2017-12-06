@@ -1,4 +1,4 @@
-# Docker ELK stack with integrated Kafka Adapter
+# Data Analytics Stack with
 
 
 The ELK stack was adapted from [deviantony](https://github.com/deviantony/docker-elk)'s ELK-Stack version: 
@@ -23,6 +23,7 @@ Plus the Kafka Adapter based on the components:
 * ELK 5 with X-Pack support: https://github.com/deviantony/docker-elk/tree/x-pack
 * ELK 5 in Vagrant: https://github.com/deviantony/docker-elk/tree/vagrant
 * ELK 5 with Search Guard: https://github.com/deviantony/docker-elk/tree/searchguard
+
 
 ## Contents
 
@@ -71,13 +72,16 @@ $ chcon -R system_u:object_r:admin_home_t:s0 docker-elk/
 
 ### Bringing up the stack
 
+Before running in a deployed mode, it is recommended change the the mounted data-directory in `docker-compose.yml` to a directory outside this folder to the Elasticsearch/data, because this git-repo should remain static and lightweigthed. See [here](#how-can-i-persist-elasticsearch-data) for more infos on how to persist data.
+
+
 Start the ELK stack using `docker-compose`:
 
 ```bash
 cd elk
 docker-compose up --build -d
 
-cd ../adapter
+cd ../kafka-logstash-adapter
 docker-compose up --build -d
 
 cd ../zeppelin
@@ -87,10 +91,16 @@ docker-compose up --build -d
 
 The flag `-d` stands for running it in background (detached mode):
 
+Watch the logs with:
+
+```bash
+docker-compose logs -f
+```
+
 
 Give Kibana about 2 minutes to initialize, then access the Kibana web UI by hitting
 [http://localhost:5601](http://localhost:5601) with a web browser.
-
+tra
 By default, the stack exposes the following ports:
 * 5000: Logstash TCP input.
 * 9200: Elasticsearch HTTP
@@ -147,44 +157,8 @@ $ curl -XPUT -D- 'http://localhost:9200/.kibana/config/5.6.2' \
     -d '{"defaultIndex": "logstash-*"}'
 ```
 
-## Configuration
 
-**NOTE**: Configuration is not dynamically reloaded, you will need to restart the stack after any change in the
-configuration of a component.
 
-### How can I tune the Kibana configuration?
-
-The Kibana default configuration is stored in `kibana/config/kibana.yml`.
-
-It is also possible to map the entire `config` directory instead of a single file.
-
-### How can I tune the Logstash configuration?
-
-The Logstash configuration is stored in `logstash/config/logstash.yml`.
-
-It is also possible to map the entire `config` directory instead of a single file, however you must be aware that
-Logstash will be expecting a
-[`log4j2.properties`](https://github.com/elastic/logstash-docker/tree/master/build/logstash/config) file for its own
-logging.
-
-### How can I tune the Elasticsearch configuration?
-
-The Elasticsearch configuration is stored in `elasticsearch/config/elasticsearch.yml`.
-
-You can also specify the options you want to override directly via environment variables:
-
-```yml
-elasticsearch:
-
-  environment:
-    network.host: "_non_loopback_"
-    cluster.name: "my-cluster"
-```
-
-### How can I scale out the Elasticsearch cluster?
-
-Follow the instructions from the Wiki: [Scaling out
-Elasticsearch](https://github.com/deviantony/docker-elk/wiki/Elasticsearch-cluster)
 
 ## Storage
 
@@ -222,72 +196,12 @@ Alternatively, setting the permissions of the directory `/path/to/storage` to th
 For demonstration purposes, example data is shared in the default`data`.
 
 
-## Extensibility
 
-### How can I add plugins?
-
-To add plugins to any ELK component you have to:
-
-1. Add a `RUN` statement to the corresponding `Dockerfile` (eg. `RUN logstash-plugin install logstash-filter-json`)
-2. Add the associated plugin code configuration to the service configuration (eg. Logstash input/output)
-3. Rebuild the images using the `docker-compose build` command
-
-### How can I enable the provided extensions?
-
-A few extensions are available inside the [`extensions`](extensions) directory. These extensions provide features which
-are not part of the standard Elastic stack, but can be used to enrich it with extra integrations.
-
-The documentation for these extensions is provided inside each individual subdirectory, on a per-extension basis. Some
-of them require manual changes to the default ELK configuration.
-
-## JVM tuning
-
-### How can I specify the amount of memory used by a service?
-
-By default, both Elasticsearch and Logstash start with [1/4 of the total host
-memory](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/gctuning/parallel.html#default_heap_size) allocated to
-the JVM Heap Size.
-
-The startup scripts for Elasticsearch and Logstash can append extra JVM options from the value of an environment
-variable, allowing the user to adjust the amount of memory that can be used by each component:
-
-| Service       | Environment variable |
-|---------------|----------------------|
-| Elasticsearch | ES_JAVA_OPTS         |
-| Logstash      | LS_JAVA_OPTS         |
-
-To accomodate environments where memory is scarce (Docker for Mac has only 2 GB available by default), the Heap Size
-allocation is capped by default to 256MB per service in the `docker-compose.yml` file. If you want to override the
-default JVM configuration, edit the matching environment variable(s) in the `docker-compose.yml` file.
-
-For example, to increase the maximum JVM Heap Size for Logstash:
-
-```yml
-logstash:
-
-  environment:
-    LS_JAVA_OPTS: "-Xmx1g -Xms1g"
-```
-
-### How can I enable a remote JMX connection to a service?
-
-As for the Java Heap memory (see above), you can specify JVM options to enable JMX and map the JMX port on the docker
-host.
-
-Update the `{ES,LS}_JAVA_OPTS` environment variable with the following content (I've mapped the JMX service on the port
-18080, you can change that). Do not forget to update the `-Djava.rmi.server.hostname` option with the IP address of your
-Docker host (replace **DOCKER_HOST_IP**):
-
-```yml
-logstash:
-
-  environment:
-    LS_JAVA_OPTS: "-Dcom.sun.management.jmxremote -Dcom.sun.management.jmxremote.ssl=false -Dcom.sun.management.jmxremote.authenticate=false -Dcom.sun.management.jmxremote.port=18080 -Dcom.sun.management.jmxremote.rmi.port=18080 -Djava.rmi.server.hostname=DOCKER_HOST_IP -Dcom.sun.management.jmxremote.local.only=false"
-```
 
 ## trouble-shooting
 
 ### Can't apt-get update in Dockerfile:
+
 Restart the service
 
 ```sudo service docker restart```
@@ -314,27 +228,25 @@ or add your dns address as described above
 
 ### Elasticsearch crashes instantly:
 
-Check permission of `elasticsearch/data`.
+Check permission of `data-analytics` and **datasink**-directory:
 
 ```bash
 sudo chown -r USER:USER .
 sudo chmod -R 777 .
 ```
 
-or remove redundant docker installations or reinstall it
+In case this doesn't help, you may have to remove redundant docker installations or reinstall it
+
 
 
 ### Error starting userland proxy: listen tcp 0.0.0.0:3030: bind: address already in use
 
-Bring down other services,
+Bring down other services, or change the hosts port number in docker-compose.yml. 
 
-or change the hosts port number in docker-compose.yml. 
-eg.
-```kafka:
-    ports:
-     - "3031:3030"
+Find all running services by:
+```bash
+sudo docker ps
 ```
-
 
 
 ### errors while removing docker containers:

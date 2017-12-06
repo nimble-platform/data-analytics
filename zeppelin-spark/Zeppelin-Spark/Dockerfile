@@ -77,3 +77,4 @@ WORKDIR $ZEPPELIN_HOME/workspace
 
 # Absolute path is needed
 CMD ["/usr/zeppelin/bin/zeppelin.sh"]
+

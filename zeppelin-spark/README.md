@@ -1,4 +1,4 @@
-# zeppelin
+# Zeppelin with Spark and Data Science Tools inside the Data Analytics Stack
 
 A `debian:jessie` based Spark and [Zeppelin](http://zeppelin.apache.org) Docker container.
 
@@ -6,6 +6,31 @@ This image is large and opinionated. It contains:
 
 - [Spark 2.1.1](http://spark.apache.org/docs/2.1.1) and [Hadoop 2.7.3](http://hadoop.apache.org/docs/r2.7.3)
 - [PySpark](http://spark.apache.org/docs/2.1.1/api/python) support with [Anaconda3-5](https://www.anaconda.com/distribution/)
+
+
+
+## usage
+
+Start the ELK stack using `docker-compose`:
+
+```bash
+cd ../zeppelin
+docker-compose up --build -d
+```
+
+The flag `-d` stands for running it in background (detached mode):
+
+
+Watch the logs with:
+
+```bash
+cd ../zeppelin
+docker-compose logs -f
+```
+
+
+Zeppelin will be running at [http://localhost:8080](http://localhost:8080).
+
 
 
 ## complex usage
@@ -17,7 +42,7 @@ You can use [docker-compose](http://docs.docker.com/compose) to easily run Zeppe
 
 ## onbuild
 
-The Docker `onbuild` container is still a part of this project, but **I have no plans to keep it updated**. See the `onbuild` directory to view its `Dockerfile`.
+The Docker `onbuild` container is still a part of this project, but **there are no plans to keep it updated**. See the `onbuild` directory to view its `Dockerfile`.
 
 To use it, create a new `Dockerfile` based on `dylanmei/zeppelin:onbuild` and supply a new, executable `install.sh` file in the same directory. It will override the base one via Docker's [ONBUILD](https://docs.docker.com/reference/builder/#onbuild) instruction.
 
@@ -43,25 +68,5 @@ INSTALL
 
 ```
 
-## license
-
-MIT
-
-
-## usage
-
-```
-sudo docker build --rm -t nimble_zeppelin .
-
-sudo docker run --name nimble_zeppelin -p 8080:8080 -v /home/docker/nimble_zeppelin/workspace:/usr/zeppelin/workspace -v /home/docker/nimble_zeppelin/notebook:/usr/zeppelin/notebook nimble_zeppelin
-
-sudo docker run --name nimble_zeppelin -p 8888:8888 -p 8080:8080 -v /home/docker/nimble_zeppelin/workspace:/usr/zeppelin/workspace -v /home/docker/nimble_zeppelin/notebook:/usr/zeppelin/notebook nimble_zeppelin
-
-sudo docker rm -f nimble_zeppelin
-
-sudo docker exec -it nimble_zeppelin /bin/bash
-```
-
-Zeppelin will be running at `http://${YOUR_DOCKER_HOST}:8080`.
 
 

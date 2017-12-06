@@ -4,11 +4,13 @@ version: '3.3'
 services:
 # Elasticsearch
   elasticsearch:
-    container_name: elasticsearch
-    build: elasticsearch/
+    build: 
+      context: elasticsearch/
+      args:
+        ELK_VERSION: ${ELK_VERSION}
     volumes:
       - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
-      - /home/cschranz/datasink:/usr/share/elasticsearch/data
+      - ${DATASINK}:/usr/share/elasticsearch/data
     ports:
       - "9200:9200"
       - "9300:9300"
@@ -25,7 +27,10 @@ services:
 
 # Logstash
   logstash:
-    build: logstash/
+    build: 
+      context: logstash/
+      args:
+        ELK_VERSION: ${ELK_VERSION}
     volumes:
       - ./logstash/config/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
       - ./logstash/pipeline:/usr/share/logstash/pipeline
@@ -41,7 +46,10 @@ services:
 
 # Kibana
   kibana:
-    build: kibana/
+    build: 
+      context: kibana/
+      args:
+        ELK_VERSION: ${ELK_VERSION}
     volumes:
       - ./kibana/config/:/usr/share/kibana/config:ro
     ports:

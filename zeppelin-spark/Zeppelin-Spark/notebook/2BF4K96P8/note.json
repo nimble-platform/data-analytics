@@ -150,7 +150,7 @@
     {
       "text": "%elasticsearch\n\nindex /logs/http {\n  \"date\": \"2015-12-08T21:03:13.588Z\",\n  \"request\": {\n    \"method\": \"GET\",\n    \"url\": \"/zeppelin/4cd001cd-c517-4fa9-b8e5-a06b8f4056c4\",\n    \"headers\": [ \"Accept: *.*\", \"Host: apache.org\"]\n  },\n  \"status\": \"403\",\n  \"content_length\": 1234\n}",
       "user": "anonymous",
-      "dateUpdated": "Dec 1, 2017 6:34:38 PM",
+      "dateUpdated": "Dec 5, 2017 10:46:30 AM",
       "config": {
         "colWidth": 12.0,
         "graph": {
@@ -163,7 +163,7 @@
           "scatter": {}
         },
         "enabled": true,
-        "editorMode": "ace/mode/text",
+        "editorMode": "ace/mode/undefined",
         "results": {},
         "editorSetting": {
           "language": "text",
@@ -187,8 +187,8 @@
       "jobName": "paragraph_1459607369643_2073952035",
       "id": "20160402-142929_128771809",
       "dateCreated": "Apr 2, 2016 2:29:29 AM",
-      "dateStarted": "Dec 1, 2017 6:34:38 PM",
-      "dateFinished": "Dec 1, 2017 6:34:40 PM",
+      "dateStarted": "Dec 5, 2017 10:46:30 AM",
+      "dateFinished": "Dec 5, 2017 10:46:32 AM",
       "status": "ERROR",
       "progressUpdateIntervalMs": 500
     },
@@ -246,11 +246,11 @@
     {
       "text": "%elasticsearch search [{#transport#-1}{127.0.0.1}{127.0.0.1:9300}]",
       "user": "anonymous",
-      "dateUpdated": "Dec 1, 2017 6:34:46 PM",
+      "dateUpdated": "Dec 5, 2017 10:53:21 AM",
       "config": {
         "colWidth": 12.0,
         "enabled": true,
-        "editorMode": "ace/mode/text",
+        "editorMode": "ace/mode/undefined",
         "results": [
           {
             "graph": {
@@ -291,15 +291,15 @@
       "jobName": "paragraph_1459607697266_-620568750",
       "id": "20160402-143457_2047955666",
       "dateCreated": "Apr 2, 2016 2:34:57 AM",
-      "dateStarted": "Dec 1, 2017 6:34:46 PM",
-      "dateFinished": "Dec 1, 2017 6:34:46 PM",
+      "dateStarted": "Dec 5, 2017 10:53:21 AM",
+      "dateFinished": "Dec 5, 2017 10:53:21 AM",
       "status": "ERROR",
       "progressUpdateIntervalMs": 500
     },
     {
-      "text": "",
+      "text": "%sh\ncurl http://elasticsearch:9200/logstash-2*/_search?q\u003dphenomenonTime\u003e\"2017-12-05\"_",
       "user": "anonymous",
-      "dateUpdated": "Nov 22, 2017 10:51:06 AM",
+      "dateUpdated": "Dec 5, 2017 11:01:48 AM",
       "config": {
         "colWidth": 12.0,
         "graph": {
@@ -312,10 +312,10 @@
           "scatter": {}
         },
         "enabled": true,
-        "editorMode": "ace/mode/text",
+        "editorMode": "ace/mode/sh",
         "results": {},
         "editorSetting": {
-          "language": "text",
+          "language": "sh",
           "editOnDblClick": false
         }
       },
@@ -323,26 +323,53 @@
         "params": {},
         "forms": {}
       },
+      "results": {
+        "code": "SUCCESS",
+        "msg": [
+          {
+            "type": "TEXT",
+            "data": "  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current\n                                 Dload  Upload   Total   Spent    Left  Speed\n\r  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0\r100  7372  100  7372    0     0   7372      0  0:00:01 --:--:--  0:00:01  146k\n"
+          }
+        ]
+      },
       "apps": [],
       "jobName": "paragraph_1459629642511_1037706716",
       "id": "20160402-204042_810555519",
       "dateCreated": "Apr 2, 2016 8:40:42 AM",
+      "dateStarted": "Dec 5, 2017 11:01:48 AM",
+      "dateFinished": "Dec 5, 2017 11:01:48 AM",
       "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%sh\n",
+      "user": "anonymous",
+      "dateUpdated": "Dec 5, 2017 10:47:04 AM",
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "apps": [],
+      "jobName": "paragraph_1512470824160_1043910284",
+      "id": "20171205-104704_1519110455",
+      "dateCreated": "Dec 5, 2017 10:47:04 AM",
+      "status": "READY",
       "progressUpdateIntervalMs": 500
     }
   ],
   "name": "ElasticSearch Interpreter",
   "id": "2BF4K96P8",
   "angularObjects": {
-    "2D38YUJJK:shared_process": [],
-    "2CZ97KAKV:shared_process": [],
-    "2D1STCUR2:shared_process": [],
-    "2D2QMU49G:shared_process": [],
-    "2D31T9AJF:shared_process": [],
-    "2D1DBWC15:shared_process": [],
-    "2CYMS4QNQ:shared_process": [],
-    "2CZVHPJJV:shared_process": [],
-    "2CZRNVXTX:shared_process": []
+    "2D2WCQKTT:shared_process": [],
+    "2D2BM4W1G:shared_process": [],
+    "2CZR1BSNU:shared_process": [],
+    "2D372FCW9:shared_process": [],
+    "2D1RVVNU2:shared_process": [],
+    "2CYNGYKVJ:shared_process": [],
+    "2D2Y1WB34:shared_process": [],
+    "2D25EYBVW:shared_process": [],
+    "2D2VJQDW8:shared_process": []
   },
   "config": {},
   "info": {}
