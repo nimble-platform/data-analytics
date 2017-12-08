@@ -21,7 +21,7 @@ services:
       - redis
     entrypoint:
       - python
-      - /home/code/kafka-adapter.py
+      - /home/src/db-adapter.py
     restart: always
 
 # Redis Webservice
