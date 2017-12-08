@@ -107,7 +107,7 @@ By default, the stack exposes the following ports:
 * 9300: Elasticsearch TCP transport
 * 5601: Kibana
 * 3030: Kafka-ELK HTTP
-* 8080: Zeppelin GUI
+* 8088: Zeppelin GUI
 
 **WARNING**: If you're using `boot2docker`, you must access it via the `boot2docker` IP address instead of `localhost`.
 

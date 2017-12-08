@@ -9,7 +9,7 @@ services:
       - ./Zeppelin-Spark/workspace:/usr/zeppelin/workspace
       - ./Zeppelin-Spark/notebook:/usr/zeppelin/notebook
     ports:
-      - "8080:8080"
+      - "8088:8080"
     networks:
       - elk_datastore
     restart: always
