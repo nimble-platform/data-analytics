@@ -34,6 +34,7 @@ STATUS_FILE = "status.log"
 
 # Sensorthings parameters
 ST_SERVER = "http://il060:8082/v1.0/"
+REFRESH_MAPPING_EVERY = 5 * 60  # in seconds
 
 # webservice setup
 app = Flask(__name__)
@@ -62,6 +63,7 @@ class KafkaStAdapter:
         if self.enable_sensorthings:
             self.id_mapping = self.full_st_id_map()
 
+
     def full_st_id_map(self):
         datastreams = requests.get(ST_SERVER + "Datastreams").json()
         id_mapping = dict()
@@ -78,6 +80,13 @@ class KafkaStAdapter:
         stream_id = str(stream["@iot.id"])
         self.id_mapping["value"][stream_id] = {"name": stream["name"],
                                                "description": stream["description"]}
+
+    def empty_id_mapping(self):
+        datastreams = requests.get(ST_SERVER + "Datastreams").json()
+        id_mapping = dict()
+        id_mapping["@iot.nextLink"] = datastreams["@iot.nextLink"]
+        id_mapping["value"] = dict()
+        return id_mapping
 
     def stream_kafka(self):
         """
@@ -183,6 +192,7 @@ class KafkaStAdapter:
         # Kafka 2 Logstash streaming
         if self.enable_kafka_adapter:
             running = True
+            ts_refreshed_mapping = time.time()
             try:
                 while running:
                     msg = consumer.poll()
@@ -201,6 +211,11 @@ class KafkaStAdapter:
                     elif msg.error().code() != KafkaError._PARTITION_EOF:
                         print(msg.error())
                         logger.warning('Exception in Kafka-Logstash Streaming', extra=str(msg))
+
+                    t = time.time()
+                    if t - ts_refreshed_mapping > REFRESH_MAPPING_EVERY:
+                        self.id_mapping = self.empty_id_mapping()
+                        ts_refreshed_mapping = t
                     time.sleep(0)
 
             except Exception as error:
