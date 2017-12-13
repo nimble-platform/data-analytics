@@ -14,7 +14,7 @@ services:
     env_file: 
       - .env
     networks:
-      - elk_datastore
+      - db-adapter
     external_links:
       - elasticsearch:elasticsearch
     depends_on:
@@ -30,12 +30,12 @@ services:
     sysctls:
       - net.core.somaxconn=65535
     networks:
-      - elk_datastore
+      - db-adapter
     restart: always
 
 # Network
 networks:
-  elk_datastore:
-    external: true
+  db-adapter:
+
 
 
