@@ -28,7 +28,7 @@ BOOTSTRAP_SERVERS_default = 'il061,il062'
 KAFKA_GROUP_ID = "db-adapter"
 
 # logstash parameters
-HOST_default = 'logstash'  # important to set
+HOST_default = 'il060'  # 'logstash'  # important to set
 PORT_default = 5000
 STATUS_FILE = "status.log"
 
@@ -134,7 +134,7 @@ class KafkaStAdapter:
         adapter_status = {
             "application": "db-adapter",
             "doc": __desc__,
-            "status": "waiting for Elasticsearch",
+            "status": "waiting for Logstash",
             "kafka input": {
                 "configuration": conf,
                 "subscribed topics": kafka_topics_str,
@@ -159,28 +159,19 @@ class KafkaStAdapter:
             f.write(json.dumps(adapter_status))
 
         # time for logstash init
-        elastic_reachable = False
-        while not elastic_reachable:
+        logstash_reachable = False
+        while not logstash_reachable:
             try:
                 # use localhost if running local
-                r = requests.get("http://elasticsearch:9200")
+                r = requests.get("http://" + HOST_default + ":9600")
                 status_code = r.status_code
                 if status_code in [200]:
-                    elastic_reachable = True
+                    logstash_reachable = True
             except:
                 continue
             finally:
-                time.sleep(1)
+                time.sleep(0.25)
 
-        # Elasticsearch ready
-        adapter_status["status"] = "waiting for Logstash"
-        with open(STATUS_FILE, "w") as f:
-            f.write(json.dumps(adapter_status))
-        print("Adapter Status:", str(adapter_status))
-        logger.info('Elasticsearch reachable')
-
-        # Wait for Logstash
-        time.sleep(20)
 
         # ready to stream flag
         adapter_status["status"] = "running"
