@@ -1,6 +1,5 @@
 version: '3.3'
 
-
 services:
 # Kafka
   kafka:
@@ -15,8 +14,9 @@ services:
       - .env
     networks:
       - db-adapter
+      - elk_datastore
     external_links:
-      - elasticsearch:elasticsearch
+      - elk_elasticsearch:elk_elasticsearch
     depends_on:
       - redis
     entrypoint:
@@ -31,10 +31,13 @@ services:
       - net.core.somaxconn=65535
     networks:
       - db-adapter
+      - elk_datastore
     restart: always
 
 # Network
 networks:
+  elk_datastore:
+    external: true
   db-adapter:
 
 

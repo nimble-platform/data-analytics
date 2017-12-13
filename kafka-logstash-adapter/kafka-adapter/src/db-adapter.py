@@ -13,8 +13,8 @@ from logstash import TCPLogstashHandler
 from confluent_kafka import Consumer, KafkaError
 
 
-__date__ = "28 November 2017"
-__version__ = "1.6"
+__date__ = "13 Dezember 2017"
+__version__ = "1.7"
 __email__ = "christoph.schranz@salzburgresearch.at"
 __status__ = "Development"
 __desc__ = """This program forwards consumed messages from the kafka bus semantically interpreted by sensorthings 
@@ -28,7 +28,7 @@ BOOTSTRAP_SERVERS_default = 'il061,il062'
 KAFKA_GROUP_ID = "db-adapter"
 
 # logstash parameters
-HOST_default = 'il060'  # 'logstash'  # important to set
+HOST_default = 'logstash'  # 'il060'  # 'logstash'  # important to set
 PORT_default = 5000
 STATUS_FILE = "status.log"
 
@@ -102,7 +102,7 @@ class KafkaStAdapter:
 
         # Init logstash logging
         logging.basicConfig(level='WARNING')
-        logger = logging.getLogger(str(kafka_topics))
+        logger = logging.getLogger(kafka_group_id + '.' + kafka_topics_str)
         logger.setLevel(logging.INFO)
 
         # get bootstrap_servers from environment variable or use defaults and configure Consumer
