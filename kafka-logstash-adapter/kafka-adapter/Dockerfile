@@ -20,11 +20,11 @@ RUN apt-get update && \
 RUN pip install confluent-kafka==${CONFLUENT_KAFKA_VERSION}
 
 RUN mkdir /home/src
-COPY src /home/src
-
-WORKDIR /home/code
+WORKDIR /home/src
+ADD src/requirements.txt /home/src
 RUN pip install -r /home/src/requirements.txt
 
+ADD src/db-adapter.py /home/src
 
 # call db-apdater in yml
 
