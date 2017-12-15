@@ -28,7 +28,7 @@ BOOTSTRAP_SERVERS_default = 'il061,il062'
 KAFKA_GROUP_ID = "db-adapter"
 
 # logstash parameters
-HOST_default = 'logstash'  # 'il060'  # 'logstash'  # important to set
+HOST_default = 'il060'  # 'logstash'  # important to set
 PORT_default = 5000
 STATUS_FILE = "status.log"
 
