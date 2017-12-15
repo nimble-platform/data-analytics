@@ -1,5 +1,6 @@
 version: '3.3'
 
+
 services:
 # Kafka
   kafka:
@@ -13,12 +14,14 @@ services:
     env_file: 
       - .env
     networks:
-      - db-adapter
+      - elk_datastore
+    external_links:
+      - elasticsearch:elasticsearch
     depends_on:
       - redis
     entrypoint:
       - python
-      - /home/src/db-adapter.py
+      - /home/code/kafka-adapter.py
     restart: always
 
 # Redis Webservice
@@ -27,12 +30,12 @@ services:
     sysctls:
       - net.core.somaxconn=65535
     networks:
-      - db-adapter
+      - elk_datastore
     restart: always
 
 # Network
 networks:
-  db-adapter:
-
+  elk_datastore:
+    external: true
 
 

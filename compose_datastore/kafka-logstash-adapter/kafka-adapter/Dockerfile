@@ -19,13 +19,15 @@ RUN apt-get update && \
 # ENV CONFLUENT_KAFKA_VERSION 0.9.1.2
 RUN pip install confluent-kafka==${CONFLUENT_KAFKA_VERSION}
 
-RUN mkdir /home/src
-WORKDIR /home/src
-ADD src/requirements.txt /home/src
-RUN pip install -r /home/src/requirements.txt
+RUN mkdir /home/code
+ADD code/requirements.txt /home/code
+ADD code/kafka-adapter.py /home/code
 
-ADD src/db-adapter.py /home/src
+WORKDIR /home/code
+RUN pip install -r /home/code/requirements.txt
 
-# call db-apdater in yml
 
+# run kafka-apdater
+# ENTRYPOINT ["python"]
+# CMD ["/home/code/kafka-adapter.py"]
 
