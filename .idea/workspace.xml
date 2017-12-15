@@ -2,10 +2,663 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8f07c604-4568-418c-b109-38348b4f90f2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/_state/global-1.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/_state/node-0.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/VCfyKzA-S7aLkM1JW3sAnw/0/_state/state-0.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/VCfyKzA-S7aLkM1JW3sAnw/0/index/_0.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/VCfyKzA-S7aLkM1JW3sAnw/0/index/_0.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/VCfyKzA-S7aLkM1JW3sAnw/0/index/_0.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/VCfyKzA-S7aLkM1JW3sAnw/0/index/segments_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/VCfyKzA-S7aLkM1JW3sAnw/0/index/write.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/VCfyKzA-S7aLkM1JW3sAnw/0/translog/translog-1.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/VCfyKzA-S7aLkM1JW3sAnw/0/translog/translog-1.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/VCfyKzA-S7aLkM1JW3sAnw/0/translog/translog-2.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/VCfyKzA-S7aLkM1JW3sAnw/0/translog/translog.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/VCfyKzA-S7aLkM1JW3sAnw/_state/state-1.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/0/_state/state-0.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/0/index/_0.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/0/index/_0.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/0/index/_0.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/0/index/_1.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/0/index/_1.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/0/index/_1.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/0/index/segments_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/0/index/write.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/0/translog/translog-1.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/0/translog/translog-1.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/0/translog/translog-2.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/0/translog/translog.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/_state/state-0.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/index/_0.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/index/_0.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/index/_0.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/index/_1.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/index/_1.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/index/_1.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/index/_2.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/index/_2.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/index/_2.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/index/_3.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/index/_3.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/index/_3.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/index/segments_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/index/write.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/translog/translog-1.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/translog/translog-1.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/translog/translog-2.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/1/translog/translog.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/2/_state/state-0.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/2/index/_0.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/2/index/_0.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/2/index/_0.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/2/index/segments_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/2/index/write.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/2/translog/translog-1.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/2/translog/translog-1.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/2/translog/translog-2.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/2/translog/translog.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/_state/state-0.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/index/_0.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/index/_0.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/index/_0.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/index/_1.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/index/_1.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/index/_1.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/index/_2.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/index/_2.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/index/_2.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/index/_3.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/index/_3.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/index/_3.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/index/_4.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/index/_4.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/index/_4.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/index/segments_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/index/write.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/translog/translog-1.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/translog/translog-1.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/translog/translog-2.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/3/translog/translog.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/4/_state/state-0.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/4/index/_0.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/4/index/_0.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/4/index/_0.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/4/index/_1.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/4/index/_1.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/4/index/_1.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/4/index/segments_2" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/4/index/write.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/4/translog/translog-1.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/4/translog/translog-1.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/4/translog/translog-2.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/4/translog/translog.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/indices/Y6KLm6-RSMOsQap11lRlFw/_state/state-4.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/datasink/nodes/0/node.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/.env" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/docker-compose.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/Dockerfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/config/elasticsearch.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/_state/global-31.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/_state/node-28.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/_state/state-27.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/index/_2.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/index/_2.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/index/_2.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/index/segments_a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/index/write.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-10.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-10.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-11.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-11.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-12.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-12.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-13.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-13.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-14.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-14.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-15.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-15.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-16.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-16.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-17.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-17.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-18.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-18.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-19.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-19.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-20.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-20.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-21.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-21.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-22.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-22.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-23.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-23.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-24.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-24.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-25.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-25.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-26.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-26.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-27.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-27.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-28.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-28.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-29.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-29.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-30.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-6.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-6.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-7.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-7.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-8.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-8.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-9.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog-9.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/0/translog/translog.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/5TF_U2dVQl6GIcfVoq39Fw/_state/state-83.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/_state/state-23.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_a.dii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_a.dim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_a.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_a.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_a.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_a.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_a_Lucene50_0.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_a_Lucene50_0.pos" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_a_Lucene50_0.tim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_a_Lucene50_0.tip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_a_Lucene70_0.dvd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_a_Lucene70_0.dvm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_b.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_b.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_b.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_c.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_c.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_c.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_d.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_d.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_d.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_e.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_e.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_e.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_f.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_f.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_f.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_g.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_g.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_g.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_h.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_h.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_h.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_i.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_i.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/_i.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/segments_9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/index/write.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-1.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-1.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-10.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-10.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-11.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-11.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-12.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-12.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-13.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-13.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-14.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-14.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-15.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-15.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-16.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-16.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-17.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-17.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-18.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-18.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-19.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-19.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-2.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-2.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-20.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-20.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-21.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-21.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-22.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-22.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-23.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-23.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-24.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-24.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-25.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-25.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-26.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-26.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-27.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-27.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-28.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-28.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-29.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-29.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-3.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-3.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-30.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-4.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-4.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-5.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-5.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-6.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-6.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-7.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-7.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-8.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-8.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-9.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog-9.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/0/translog/translog.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/_state/state-23.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/index/_k.dii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/index/_k.dim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/index/_k.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/index/_k.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/index/_k.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/index/_k.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/index/_k_Lucene50_0.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/index/_k_Lucene50_0.pos" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/index/_k_Lucene50_0.tim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/index/_k_Lucene50_0.tip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/index/_k_Lucene70_0.dvd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/index/_k_Lucene70_0.dvm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/index/segments_9" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/index/write.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-1.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-1.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-10.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-10.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-11.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-11.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-12.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-12.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-13.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-13.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-14.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-14.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-15.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-15.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-16.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-16.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-17.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-17.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-18.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-18.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-19.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-19.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-2.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-2.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-20.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-20.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-21.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-21.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-22.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-22.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-23.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-23.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-24.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-24.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-25.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-25.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-26.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-26.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-27.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-27.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-28.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-28.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-29.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-29.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-3.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-3.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-30.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-4.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-4.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-5.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-5.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-6.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-6.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-7.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-7.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-8.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-8.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-9.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog-9.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/1/translog/translog.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/_state/state-23.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_k.dii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_k.dim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_k.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_k.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_k.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_k.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_k_Lucene50_0.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_k_Lucene50_0.pos" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_k_Lucene50_0.tim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_k_Lucene50_0.tip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_k_Lucene70_0.dvd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_k_Lucene70_0.dvm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_l.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_l.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_l.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_m.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_m.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_m.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_n.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_n.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_n.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_o.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_o.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_o.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_q.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_q.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/_q.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/segments_b" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/index/write.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-1.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-1.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-10.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-10.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-11.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-11.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-12.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-12.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-13.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-13.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-14.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-14.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-15.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-15.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-16.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-16.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-17.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-17.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-18.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-18.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-19.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-19.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-2.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-2.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-20.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-20.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-21.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-21.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-22.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-22.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-23.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-23.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-24.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-24.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-25.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-25.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-26.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-26.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-27.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-27.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-28.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-28.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-29.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-29.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-3.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-3.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-30.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-30.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-31.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-31.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-32.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-4.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-4.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-5.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-5.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-6.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-6.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-7.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-7.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-8.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-8.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-9.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog-9.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/2/translog/translog.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/_state/state-23.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_k.dii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_k.dim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_k.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_k.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_k.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_k.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_k_Lucene50_0.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_k_Lucene50_0.pos" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_k_Lucene50_0.tim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_k_Lucene50_0.tip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_k_Lucene70_0.dvd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_k_Lucene70_0.dvm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_l.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_l.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_l.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_m.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_m.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_m.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_n.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_n.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/_n.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/segments_a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/index/write.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-1.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-1.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-10.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-10.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-11.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-11.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-12.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-12.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-13.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-13.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-14.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-14.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-15.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-15.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-16.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-16.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-17.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-17.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-18.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-18.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-19.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-19.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-2.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-2.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-20.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-20.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-21.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-21.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-22.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-22.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-23.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-23.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-24.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-24.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-25.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-25.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-26.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-26.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-27.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-27.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-28.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-28.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-29.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-29.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-3.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-3.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-30.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-30.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-31.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-4.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-4.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-5.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-5.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-6.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-6.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-7.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-7.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-8.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-8.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-9.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog-9.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/3/translog/translog.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/_state/state-23.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_k.dii" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_k.dim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_k.fdt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_k.fdx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_k.fnm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_k.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_k_Lucene50_0.doc" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_k_Lucene50_0.pos" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_k_Lucene50_0.tim" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_k_Lucene50_0.tip" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_k_Lucene70_0.dvd" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_k_Lucene70_0.dvm" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_l.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_l.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_l.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_m.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_m.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_m.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_n.cfe" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_n.cfs" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/_n.si" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/segments_a" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/index/write.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-1.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-1.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-10.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-10.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-11.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-11.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-12.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-12.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-13.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-13.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-14.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-14.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-15.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-15.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-16.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-16.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-17.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-17.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-18.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-18.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-19.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-19.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-2.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-2.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-20.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-20.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-21.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-21.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-22.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-22.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-23.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-23.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-24.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-24.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-25.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-25.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-26.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-26.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-27.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-27.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-28.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-28.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-29.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-29.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-3.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-3.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-30.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-30.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-31.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-4.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-4.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-5.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-5.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-6.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-6.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-7.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-7.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-8.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-8.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-9.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog-9.tlog" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/4/translog/translog.ckp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/indices/QTnYvfbxQ1ytZhJLWH9DLA/_state/state-118.st" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/elasticsearch/data/nodes/0/node.lock" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/extensions/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/extensions/logspout/Dockerfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/extensions/logspout/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/extensions/logspout/build.sh" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/extensions/logspout/logspout-compose.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/extensions/logspout/modules.go" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/kibana/Dockerfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/kibana/config/kibana.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/logstash/Dockerfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/logstash/config/logstash.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/elk/logstash/pipeline/logstash.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kafka-logstash-adapter/.env" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kafka-logstash-adapter/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kafka-logstash-adapter/docker-compose.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kafka-logstash-adapter/kafka-adapter/Dockerfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kafka-logstash-adapter/kafka-adapter/src/db-adapter.py" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kafka-logstash-adapter/kafka-adapter/src/requirements.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kafka-logstash-adapter/redis/Dockerfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/kafka-logstash-adapter/redis/sysctl.conf" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/versions.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/.env" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/Dockerfile" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/Dockerfile_v01" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/Dockerfile_v02" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/Dockerfile_v03" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/Dockerfile_v04" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/Dockerfile_v05" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/Dockerfile_v06" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/Dockerfile_v07" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/about.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/2A94M5J1Z/note.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/2BF4K96P8/note.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/2BGB9B9KU/note.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/2BTRWA9EV/note.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/2BWJFTXKJ/note.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/2BYEZ5EVK/note.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/2C2AUG798/note.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/2C35YU814/note.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/2C57UKYWR/note.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/2CV1Q3DS4/note.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/examples/elasticsearch/docker-compose.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/examples/elasticsearch/notebooks/2BF4K96P8/note.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/examples/elasticsearch/notebooks/2BGB9B9KU/note.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/examples/local-data-files/data/.gitkeep" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/examples/local-data-files/data/death-in-paradise.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/examples/local-data-files/data/hello" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/examples/local-data-files/docker-compose.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/notebook/examples/local-data-files/notebooks/2BEQV7PZ5/note.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/workspace/2017-12-05_" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/workspace/hello.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/workspace/spark-warehouse/.ipynb_checkpoints/Untitled-checkpoint.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/workspace/spark-warehouse/Untitled.ipynb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/Zeppelin-Spark/workspace/test.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/docker-compose.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/zeppelin-spark/version.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/elk/.env" afterPath="$PROJECT_DIR$/elk/.env" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kafka-logstash-adapter/docker-compose.yml" afterPath="$PROJECT_DIR$/kafka-logstash-adapter/docker-compose.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/kafka-logstash-adapter/kafka-adapter/src/db-adapter.py" afterPath="$PROJECT_DIR$/kafka-logstash-adapter/kafka-adapter/src/db-adapter.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -15,35 +668,33 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="db-adapter.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/kafka-logstash-adapter/kafka-adapter/src/db-adapter.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="126">
+                <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="docker-compose.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/kafka-logstash-adapter/docker-compose.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/elk/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/swarm_datastore/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="56">
+                <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -61,14 +712,18 @@
         <option value="$PROJECT_DIR$/elk/docker-compose.yml" />
         <option value="$PROJECT_DIR$/kafka-logstash-adapter/kafka-adapter/src/db-adapter.py" />
         <option value="$PROJECT_DIR$/kafka-logstash-adapter/docker-compose.yml" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/swarm_datastore/README.md" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1920" />
-    <option name="y" value="359" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="113" />
     <option name="width" value="1707" />
-    <option name="height" value="964" />
+    <option name="height" value="888" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -85,6 +740,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -95,32 +752,12 @@
             <path>
               <item name="data-analytics" type="b2602c69:ProjectViewProjectNode" />
               <item name="data-analytics" type="462c0819:PsiDirectoryNode" />
-              <item name="elk" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-analytics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-analytics" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-logstash-adapter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-analytics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-analytics" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-logstash-adapter" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-adapter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="data-analytics" type="b2602c69:ProjectViewProjectNode" />
-              <item name="data-analytics" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-logstash-adapter" type="462c0819:PsiDirectoryNode" />
-              <item name="kafka-adapter" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="swarm_datastore" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -155,26 +792,25 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="359" width="1707" height="964" extended-state="0" />
-    <editor active="true" />
+    <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2814949" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13247864" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296837" sideWeight="0.5045208" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296837" sideWeight="0.4954792" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3296837" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26332623" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -186,69 +822,37 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/elk/logstash/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/elk/logstash/Dockerfile" />
+    <entry file="file://$PROJECT_DIR$/elk/logstash/config/logstash.yml" />
+    <entry file="file://$PROJECT_DIR$/elk/logstash/pipeline/logstash.conf" />
+    <entry file="file://$PROJECT_DIR$/kafka-logstash-adapter/kafka-adapter/Dockerfile" />
+    <entry file="file://$PROJECT_DIR$/elk/docker-compose.yml" />
+    <entry file="file://$PROJECT_DIR$/elk/.env" />
+    <entry file="file://$PROJECT_DIR$/kafka-logstash-adapter/docker-compose.yml" />
+    <entry file="file://$PROJECT_DIR$/kafka-logstash-adapter/kafka-adapter/src/db-adapter.py" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="126">
+            <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/elk/logstash/config/logstash.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elk/logstash/pipeline/logstash.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-logstash-adapter/kafka-adapter/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elk/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elk/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-logstash-adapter/docker-compose.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/kafka-logstash-adapter/kafka-adapter/src/db-adapter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
+    <entry file="file://$PROJECT_DIR$/swarm_datastore/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="56">
+            <caret line="51" column="16" lean-forward="true" selection-start-line="51" selection-start-column="16" selection-end-line="51" selection-end-column="16" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
         </state>
       </provider>
     </entry>
