@@ -1,0 +1,27 @@
+version: '3.3'
+
+
+services:
+  zeppelin:
+    image: 127.0.0.1:5001/zeppelin-spark
+    build: Zeppelin-Spark
+    volumes:
+      - ./Zeppelin-Spark/workspace:/usr/zeppelin/workspace
+      - ./Zeppelin-Spark/notebook:/usr/zeppelin/notebook
+    ports:
+      - "8088:8080"
+    deploy:
+      placement:
+        constraints: [node.role == worker]
+      resources:
+        limits:
+          cpus: "1"
+          memory: 15G
+      replicas: 1
+      update_config:
+        parallelism: 2
+        delay: 10s
+      restart_policy:
+        condition: on-failure
+
+
