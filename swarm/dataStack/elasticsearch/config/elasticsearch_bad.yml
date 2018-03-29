@@ -1,0 +1,24 @@
+# set indexes to be created, as phenomenonTime must be the time filter.
+# action.auto_create_index: .security,.monitoring*,.watches,.triggered_watches,.watcher-history*,logstash*, .logs-*, data-*
+action.auto_create_index: true
+# index.mapper.dynamic: false
+
+cluster.name: "docker-cluster"
+network.host: 0.0.0.0
+
+# minimum_master_nodes need to be explicitly set when bound on a public IP
+# set to 1 to allow single node clusters
+# Details: https://github.com/elastic/elasticsearch/pull/17288
+discovery.zen.minimum_master_nodes: 1
+
+# allow url for restoring backups
+repositories.url.allowed_urls: ["http://il060/es_backup/*"]
+
+discovery.zen.ping.unicast.hosts: elasticsearch
+#cluster.name: il.es.cluster
+node.name: ${HOSTNAME}
+
+node.max_local_storage_nodes: 5 
+
+
+
