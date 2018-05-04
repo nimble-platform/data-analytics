@@ -31,7 +31,7 @@ services:
         limits:
           cpus: "1"
           memory: 10G
-      replicas: 3
+      replicas: 5
       update_config:
         parallelism: 2
         delay: 10s
@@ -132,7 +132,7 @@ services:
 
 
 # https://github.com/jupyter/docker-stacks/tree/master/all-spark-notebook
-  jupyter: 
+  jupyter-spark: 
     image: 127.0.0.1:5001/jupyter
     build: jupyter/
     ports:
